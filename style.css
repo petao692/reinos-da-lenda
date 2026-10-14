@@ -328,3 +328,108 @@ footer {
         padding: 25px;
     }
 }
+.forest {
+    background:
+        radial-gradient(ellipse at top, #243b28, #111610 75%);
+}
+
+.story-box {
+    max-width: 750px;
+    margin: 0 auto 35px;
+    padding: 30px;
+    background: #1c241b;
+    border: 1px solid #607449;
+    line-height: 1.9;
+}
+
+.story-box p {
+    margin-bottom: 25px;
+}
+
+.arena {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #171914;
+    border: 1px solid #596b43;
+}
+
+.arena[hidden] {
+    display: none;
+}
+
+.battle-character,
+.battle-enemy {
+    padding: 20px;
+    background: #24251e;
+    border: 1px solid #514934;
+    margin-bottom: 15px;
+}
+
+.battle-character h3,
+.battle-enemy h3 {
+    color: var(--gold);
+    margin: 10px 0;
+}
+
+.battle-icon {
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.versus {
+    font-size: 30px;
+    margin: 20px;
+    color: var(--gold);
+}
+
+.health-bar {
+    height: 17px;
+    background: #3b2929;
+    border: 1px solid #685044;
+    margin: 12px auto;
+    overflow: hidden;
+}
+
+.health-fill {
+    height: 100%;
+    width: 100%;
+    background: #4caf50;
+    transition: width 0.3s;
+}
+
+.enemy-health {
+    background: #bd3737;
+}
+
+.battle-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.battle-actions button {
+    margin-bottom: 5px;
+}
+
+#resultadoBatalha {
+    margin-top: 20px;
+    line-height: 2;
+    color: var(--gold);
+}
+
+@media (max-width: 600px) {
+    .arena {
+        padding: 15px;
+    }
+
+    .battle-actions {
+        flex-direction: column;
+    }
+
+    .battle-actions button {
+        width: 100%;
+    }
+}
