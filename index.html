@@ -134,5 +134,56 @@
     </footer>
 
     <script src="script.js"></script>
-</body>
+</
+<section class="section forest" id="batalha">
+    <p class="subtitle">MISSÃO 001 — PERIGO NA FLORESTA</p>
+    <h2>🐺 Ameaça na Floresta</h2>
+
+    <div class="story-box">
+        <p id="historia">
+            Você chega a uma floresta sombria. Um viajante ferido
+            corre em sua direção e implora por ajuda.
+            Lobos selvagens estão atacando todos que passam pela estrada!
+        </p>
+        <button id="iniciarBatalha" onclick="iniciarMissao()">
+            ENTRAR NA FLORESTA
+        </button>
+    </div>
+
+    <div id="arena" class="arena" hidden>
+        <div class="battle-character">
+            <div class="battle-icon">🧙</div>
+            <h3 id="nomePersonagem">Seu Herói</h3>
+            <p id="vidaHeroiTexto">❤️ Vida: 100/100</p>
+            <div class="health-bar">
+                <div id="vidaHeroiBarra" class="health-fill"></div>
+            </div>
+            <p id="manaHeroiTexto">🔮 Mana: 50</p>
+        </div>
+
+        <div class="versus">⚔️ VS ⚔️</div>
+
+        <div class="battle-enemy">
+            <div class="battle-icon">🐺</div>
+            <h3 id="nomeLobo">Lobo Selvagem</h3>
+            <p id="vidaLoboTexto">❤️ Vida: 60/60</p>
+            <div class="health-bar">
+                <div id="vidaLoboBarra" class="health-fill enemy-health"></div>
+            </div>
+        </div>
+
+        <div class="battle-actions">
+            <button onclick="atacarLobo()">⚔️ ATACAR</button>
+            <button onclick="usarPocao()">🧪 USAR POÇÃO</button>
+            <button onclick="usarHabilidade()">✨ HABILIDADE</button>
+        </div>
+
+        <p id="mensagemBatalha" class="feedback">
+            Os lobos estão se aproximando...
+        </p>
+
+        <div id="resultadoBatalha"></div>
+    </div>
+</section>
+>
 </html>
