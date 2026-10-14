@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinos da Lenda | RPG Medieval</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">⚔ REINOS DA LENDA</a>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#classes">Classes</a>
+            <a href="#missoes">Missões</a>
+            <a href="#aventura">Aventura</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <p class="subtitle">✦ UM MUNDO DE MAGIA E PERIGOS ✦</p>
+
+                <h1>SEU DESTINO<br>
+                    <span>COMEÇA AQUI</span>
+                </h1>
+
+                <p class="description">
+                    Reinos estão em guerra, criaturas antigas despertam
+                    e heróis são necessários. Erga sua espada e escreva
+                    sua própria lenda.
+                </p>
+
+                <a href="#aventura" class="btn">INICIAR AVENTURA</a>
+            </div>
+
+            <div class="hero-symbol">⚔</div>
+        </section>
+
+        <section class="section" id="classes">
+            <p class="subtitle">ESCOLHA SEU DESTINO</p>
+            <h2>Classes de Heróis</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <div class="icon">🛡️</div>
+                    <h3>Guerreiro</h3>
+                    <p>Um mestre do combate, forte, resistente
+                    e preparado para qualquer batalha.</p>
+                    <button onclick="escolherClasse('Guerreiro')">
+                        Escolher classe
+                    </button>
+                </article>
+
+                <article class="card">
+                    <div class="icon">🔮</div>
+                    <h3>Mago</h3>
+                    <p>Domine as artes arcanas e destrua seus
+                    inimigos com poderosas magias.</p>
+                    <button onclick="escolherClasse('Mago')">
+                        Escolher classe
+                    </button>
+                </article>
+
+                <article class="card">
+                    <div class="icon">🏹</div>
+                    <h3>Arqueiro</h3>
+                    <p>Silencioso e preciso, ataque à distância
+                    antes que seus inimigos percebam.</p>
+                    <button onclick="escolherClasse('Arqueiro')">
+                        Escolher classe
+                    </button>
+                </article>
+            </div>
+
+            <p id="classeEscolhida" class="feedback">
+                Escolha uma classe para começar sua jornada.
+            </p>
+        </section>
+
+        <section class="section missions" id="missoes">
+            <p class="subtitle">SUA LENDA SERÁ ESCRITA</p>
+            <h2>Quadro de Missões</h2>
+
+            <div class="mission">
+                <div>
+                    <h3>🐺 Ameaça na Floresta</h3>
+                    <p>Derrote os lobos que atacam os viajantes.</p>
+                    <small>Recompensa: 100 moedas de ouro</small>
+                </div>
+                <button onclick="aceitarMissao('Ameaça na Floresta')">
+                    Aceitar
+                </button>
+            </div>
+
+            <div class="mission">
+                <div>
+                    <h3>💎 O Cristal Perdido</h3>
+                    <p>Encontre o cristal mágico nas ruínas antigas.</p>
+                    <small>Recompensa: 250 moedas de ouro</small>
+                </div>
+                <button onclick="aceitarMissao('O Cristal Perdido')">
+                    Aceitar
+                </button>
+            </div>
+
+            <p id="mensagemMissao" class="feedback"></p>
+        </section>
+
+        <section class="section adventure" id="aventura">
+            <p class="subtitle">SUA HISTÓRIA COMEÇA AGORA</p>
+            <h2>Crie seu Herói</h2>
+
+            <div class="character-box">
+                <label for="nomeHeroi">Nome do personagem</label>
+                <input type="text" id="nomeHeroi"
+                    placeholder="Digite o nome do herói">
+
+                <button class="btn" onclick="criarHeroi()">
+                    CRIAR PERSONAGEM
+                </button>
+
+                <div id="fichaHeroi" class="hero-sheet"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>⚔ Reinos da Lenda © 2026 — Sua aventura nunca termina.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
